@@ -1,0 +1,56 @@
+/*LESS Navbar*/
+.navbar.navbar-fixed{
+	position:fixed;
+}
+.navbar{	
+	height: 75px;
+	width: 100%;
+	display: flex;
+	border-bottom: 1px solid @primary-color-dark;
+	z-index:100;
+	.navbar-brand{
+		padding-left: 40px;
+		padding-right: 40px;
+		.brand-name{
+			//display: none;
+			margin-left: 50px;	
+			line-height: 75px;
+			font-size: 2em;
+			font-weight: 700;
+			color:@primary-color-text-light;
+			transition:opacity 0.3s;
+			span{
+				color:@primary-color-dark;
+				opacity: .7;
+			}
+			&:hover{
+				opacity: .8;
+				transition:opacity 0.3s;
+			}
+		}
+	}	
+	.navbar-collapse{
+		display:none;
+		#nav-items{
+			padding:0 50px 0;
+			position:absolute;
+			display: flex;
+			right: 0;
+			line-height:45px;
+			li{				
+				a{					
+				}			
+				padding: 0 30px;
+				a{
+					transition: color .3s;
+					font-size:1.2em;
+					color:@primary-color-text-light;
+					&:hover{
+						color: @primary-color-dark;
+						transition: color .3s;						
+					}
+				}
+			}
+		}
+	}
+}
