@@ -37,22 +37,23 @@
   		flex:1 0 50%;
   		transition: max-height 0.4s, max-width .4s;
   		.main-transition();
-		a{
-			width: 180px;
-			//max-width: 100px;
-			margin:5px;    
-			//min-height: 120px;		
-			line-height: 120px;
+		a{	
+			//El espacio de "overlay" es un cuadro de 120x120, pero
+			//se descuenta los 6px del border bottom, por tanto height=114px
+
+			display: block;//Importante
+			width: 100px;
+			height: 100px;
+			margin:auto; //Horizontal align
+			margin-bottom:7px;
+			margin-top:7px;	
+			line-height: 125px;
 			transition:max-width .4s;
 			.main-transition();
 			.item-image{
-				width: 105px;
-
-				//max-width: 100px;
-				//max-height: 120px;
-				//z-index: 10;				
-				//max-width: inherit;
-				//height: auto;
+				width: 100px;
+				height: auto;
+		
 			}
 		}
 	}

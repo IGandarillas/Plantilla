@@ -154,15 +154,23 @@ footer .footer p {
   #grid.item-grid .item {
     max-width: 225px!important;
     max-height: 155px!important;
+    height: 155px;
     transition-timing-function: cubic-bezier(0.16, 0.94, 0.44, 0.98);
   }
   #grid.item-grid .item a {
-    min-height: 150px;
-    line-height: 155px;
-    max-width: 125px;
-    margin: 50px;
+    width: 215px;
+    height: 130px;
+    margin: auto;
+    padding-left: 44px;
+    padding-right: 44px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    line-height: 165px;
     transition: max-width 0.4s;
     transition-timing-function: cubic-bezier(0.16, 0.94, 0.44, 0.98);
+  }
+  #grid.item-grid .item a .item-image {
+    width: 130px;
   }
 }
 @media screen and (min-width: 1100px) {
@@ -266,14 +274,19 @@ footer .footer p {
   transition-timing-function: cubic-bezier(0.16, 0.94, 0.44, 0.98);
 }
 .item-grid .item a {
-  width: 180px;
-  margin: 5px;
-  line-height: 120px;
+  display: block;
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  margin-bottom: 7px;
+  margin-top: 7px;
+  line-height: 125px;
   transition: max-width 0.4s;
   transition-timing-function: cubic-bezier(0.16, 0.94, 0.44, 0.98);
 }
 .item-grid .item a .item-image {
-  width: 105px;
+  width: 100px;
+  height: auto;
 }
 /*LESS Variables*/
 /*Text*/
